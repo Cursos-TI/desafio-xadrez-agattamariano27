@@ -12,8 +12,14 @@ void movimentoTorre(int n) { //será imprimido "Direita" n vezes que a torre se 
 void movimentoBispo(int n) { //será imprimido "Cima e Direita" n vezes que o bispo se mover...
     if (n > 0)
     {
+       for (int i = 0; i < 1; i++)
+       {
        printf("Cima\n");
+       for (int j = 0; j < 1; j++)
+       {
        printf("Direita\n");
+       }
+    }
 
        movimentoBispo(n - 1);
     }  
@@ -81,6 +87,12 @@ int main() {
         }
         
        }
+       
+    }
+    
+     
+    return 0;
+}
        
     }
     
